@@ -1,4 +1,4 @@
-## Data Analyst
+## Data Analyst (Java)
 
 Data Analyst converts natural language questions into SQL over an uploaded CSV dataset and returns query results. It is designed for internal analytics workflows where data is short-lived and read-only.
 
