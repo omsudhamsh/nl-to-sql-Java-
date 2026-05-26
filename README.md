@@ -15,7 +15,7 @@ Data Analyst converts natural language questions into SQL over an uploaded CSV d
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    FRONTEND (Vercel)                     │
+│                    FRONTEND (Local)                      │
 │                                                         │
 │   React + Vite + Tailwind CSS                           │
 │   ┌───────────────────────────────────────────┐         │
@@ -27,7 +27,7 @@ Data Analyst converts natural language questions into SQL over an uploaded CSV d
                │                │
                ▼                ▼
 ┌─────────────────────────────────────────────────────────┐
-│                   BACKEND (Render)                       │
+│                   BACKEND (Local)                        │
 │                                                         │
 │   Spring Boot + Java                                    │
 │   ┌─────────────────┐    ┌──────────────────────┐       │
@@ -59,7 +59,15 @@ Data Analyst converts natural language questions into SQL over an uploaded CSV d
 | **Backend** | Spring Boot, Java | REST API |
 | **Model** | Groq Cloud, LLaMA 3.1-8B | NL → SQL conversion |
 | **Database** | SQLite, JDBC, Commons CSV | Dynamic data storage |
-| **Deployment** | Vercel (frontend), Render (backend) | Hosting |
+| **Deployment** | Not deployed | TBD |
+
+## Java Backend Dependencies
+
+- Java 17
+- Spring Boot 3.x
+- Maven
+- SQLite JDBC
+- Apache Commons CSV
 
 ---
 
