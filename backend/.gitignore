@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+.env
+data.db
+uploaded_data.db
+target/
+.idea/
+.classpath
+.project
+.settings/
+*.iml
