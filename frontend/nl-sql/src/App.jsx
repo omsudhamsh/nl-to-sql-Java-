@@ -88,7 +88,7 @@ function App() {
     }
   };
 
-  /* ===== Query AI ===== */
+  /* ===== Query ===== */
   const handleQuery = async () => {
     if (!question.trim()) return;
 
@@ -217,12 +217,12 @@ function App() {
               color: "#f1f5f9",
             }}
           >
-            AI Data Analyst
+            Data Analyst
           </h1>
           <p style={{ color: "#64748b", fontSize: "15px", maxWidth: "460px", margin: "0 auto" }}>
             Upload your CSV dataset, then ask questions in plain English.
             <br />
-            AI generates SQL and returns instant results.
+            The model generates SQL and returns instant results.
           </p>
         </div>
 
@@ -452,7 +452,7 @@ function App() {
           color: "#334155",
         }}
       >
-        Built with FastAPI, React & Groq AI
+        Built with Spring Boot, React, and Groq LLaMA
       </footer>
     </div>
   );

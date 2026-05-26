@@ -1,6 +1,6 @@
-## AI Data Analyst
+## Data Analyst
 
-AI Data Analyst converts natural language questions into SQL over an uploaded CSV dataset and returns query results. It is designed for internal analytics workflows where data is short-lived and read-only.
+Data Analyst converts natural language questions into SQL over an uploaded CSV dataset and returns query results. It is designed for internal analytics workflows where data is short-lived and read-only.
 
 ## Features
 
@@ -57,7 +57,7 @@ AI Data Analyst converts natural language questions into SQL over an uploaded CS
 |-------|-----------|---------|
 | **Frontend** | React 19, Vite 7, Tailwind CSS 4 | UI & styling |
 | **Backend** | Spring Boot, Java | REST API |
-| **AI/LLM** | Groq Cloud, LLaMA 3.1-8B | NL → SQL conversion |
+| **Model** | Groq Cloud, LLaMA 3.1-8B | NL → SQL conversion |
 | **Database** | SQLite, JDBC, Commons CSV | Dynamic data storage |
 | **Deployment** | Vercel (frontend), Render (backend) | Hosting |
 
