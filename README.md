@@ -1,45 +1,15 @@
-<div align="center">
+## AI Data Analyst
 
-# AI Data Analyst
-
-Upload any CSV, ask questions in plain English, and get SQL plus results instantly.
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_App-6366f1?style=for-the-badge)](https://nl-sql-teal.vercel.app/)
-[![GitHub Stars](https://img.shields.io/github/stars/omsudhamsh/nl-sql?style=for-the-badge&color=f59e0b)](https://github.com/omsudhamsh/nl-sql/stargazers)
-[![Fork](https://img.shields.io/github/forks/omsudhamsh/nl-sql?style=for-the-badge&color=818cf8)](https://github.com/omsudhamsh/nl-sql/fork)
-[![License](https://img.shields.io/github/license/omsudhamsh/nl-sql?style=for-the-badge&color=22c55e)](LICENSE)
-
-<br/>
-
-![AI Data Analyst](assets/screenshot-hero.png)
-
-</div>
-
----
+AI Data Analyst converts natural language questions into SQL over an uploaded CSV dataset and returns query results. It is designed for internal analytics workflows where data is short-lived and read-only.
 
 ## Features
 
 - CSV upload for ad hoc datasets
 - Natural language to SQL using Groq LLaMA 3.1
-- Query results displayed in a responsive table
-- Dynamic schema detection from uploaded CSV
-- One-click SQL copy
-- Keyboard shortcut for submission
+- Query results rendered as a table
+- Dynamic schema detection from CSV
+- SQL copy and keyboard submit
 - Read-only SQL execution (SELECT only)
-
----
-
-## Screenshots
-
-<div align="center">
-
-| Upload Dataset | Query Results |
-|:-:|:-:|
-| ![Upload](assets/screenshot-hero.png) | ![Results](assets/screenshot-results.png) |
-
-</div>
-
----
 
 ## Architecture
 
@@ -76,14 +46,10 @@ Upload any CSV, ask questions in plain English, and get SQL plus results instant
 
 ### How It Works
 
-1. **Upload** a CSV file — backend saves it to SQLite using JDBC
-2. **Schema auto-detection** — column names and types are inferred from CSV
-3. **Ask a question** in natural language (e.g., *"Show employees with salary > 50000"*)
-4. **Groq AI (LLaMA 3.1-8B)** generates a `SELECT` SQL query using the detected schema
-5. **Backend executes the SQL** on the SQLite database
-6. **Results** are returned as JSON and displayed in a styled table
-
----
+1. Upload a CSV file. The backend stores it in SQLite using JDBC.
+2. Column names and types are inferred from the CSV.
+3. A question is converted into a `SELECT` query by Groq LLaMA 3.1.
+4. The backend executes the SQL and returns results as JSON.
 
 ## Tech Stack
 
@@ -104,12 +70,12 @@ Upload any CSV, ask questions in plain English, and get SQL plus results instant
 - **Node.js** ≥ 18
 - **Java** 17+
 - **Maven**
-- **Groq API Key** — Get one free at [console.groq.com](https://console.groq.com)
+- **Groq API Key** — Get one at [console.groq.com](https://console.groq.com)
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/omsudhamsh/nl-sql.git
+git clone https://github.com/omsudhamsh/nl-to-sql-Java-.git
 cd nl-sql
 ```
 
@@ -145,9 +111,7 @@ The app will be available at `http://localhost:5173`
 
 1. Upload a CSV file.
 2. Ask a question in natural language or paste a valid `SELECT` query.
-3. Copy the generated SQL or review the result table.
-
----
+3. Review the generated SQL and results.
 
 ## Project Structure
 
@@ -182,16 +146,6 @@ nl-sql/
 - CORS configured for secure cross-origin requests
 - API key should be stored in environment variables and never committed
 
----
-
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-
-Built by [Om Sudhamsh Padma](https://github.com/omsudhamsh)
-
-</div>
